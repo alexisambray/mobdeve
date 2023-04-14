@@ -1,4 +1,4 @@
-# mobdeve
+# AnimoWaze
 This is our version control repository for our application AnimoWaze for our course MOBDEVE.
 Developed by Reece de Padua | Alexis Ambray | AY Term 2 2022-2023
 

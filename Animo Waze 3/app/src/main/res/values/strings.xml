@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AnimoWaze</string>
+    <string name="clear"><u>Clear</u></string>
+    <color name="green">#087830</color>
+    <string name="web_client_id">74350642498-sb57t5771jhtfd1m9q1p6effqpqputeq.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

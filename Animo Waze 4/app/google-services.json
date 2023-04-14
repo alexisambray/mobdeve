@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "312928826078",
+    "project_id": "animowaze-4f15a",
+    "storage_bucket": "animowaze-4f15a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312928826078:android:979e8da9aaf395f229c84f",
+        "android_client_info": {
+          "package_name": "com.mobdeve.group20.animowaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312928826078-2dttsf6aevbrtdvgkld9s7rq7s3vepva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvGgLm3zDcZ9Xlh8NgbnlFelsL6SJnlnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312928826078-2dttsf6aevbrtdvgkld9s7rq7s3vepva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

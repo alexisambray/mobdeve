@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+
+    <SearchView
+        android:id="@+id/searchSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/search_view_bg"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search here..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/searchSV"
+        tools:layout_editor_absoluteX="402dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0"
+            android:divider="@drawable/empty_tall_divider"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/locationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Location"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clear1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:divider="@drawable/empty_divider_filter"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:shadowColor="@null"
+                    android:text="Inside DLSU Campus"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="sans-serif"
+                    android:shadowColor="@null"
+                    android:text="Outside DLSU Campus"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0"
+            android:divider="@drawable/empty_tall_divider"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/typeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Type"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clear2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_weight="0"
+                android:text="@string/clear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:divider="@drawable/empty_divider_filter"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/restaurantBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Restaurant"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/foodstallsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="sans-serif"
+                    android:text="Food Stalls"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/libraryBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Library"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:divider="@drawable/empty_divider_filter"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/sportsComplexBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Sports Complex"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/canteenBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Canteen"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/discussionRoomBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Discussion Room"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:divider="@drawable/empty_divider_filter"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/accountingOfficeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Accounting"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/registrarOfficeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Registrars "
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/healthServicesBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Health Services"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:divider="@drawable/empty_divider_filter"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/itServicesBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="IT Services"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/educationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Education"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/hangoutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Hangout Place"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:divider="@drawable/empty_divider_filter"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/airconditionBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Airconditioned"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/notairconditionBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="@color/green"
+                    android:fontFamily="sans-serif"
+                    android:text="Not Airconditioned"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/quietBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#D4D4D4"
+                    android:fontFamily="sans-serif"
+                    android:text="Quiet"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showResultsBtn2"
+        android:layout_width="392dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:text="Search Results"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav" />
+</androidx.constraintlayout.widget.ConstraintLayout>
